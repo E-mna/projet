@@ -20,7 +20,7 @@ class Categories
     private ?string $name = null;
 
     #[ORM\Column]
-    private ?Integer $categoryOrder = null;
+    private ?Int $categoryOrder = null;
 
     #[ORM\ManyToOne(targetEntity: self::class, inversedBy: 'categories')]
     private ?self $parent = null;
